@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPTV Sales</title>
+  
+  <link href="htdocs/tailwind.min.css" rel="stylesheet">
+  <style>
+  #sortbox:checked ~ #sortboxmenu {
+        opacity: 1;
+    }
+body{
+background-image: url("Download/background.svg");
+background-size:cover;
+}
+.slick-next-icon, .slick-prev-icon, .slick-dot-icon, .slick-play-icon, .slick-pause-icon{
+color:white !important;
+}
+  </style>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css">
+</head>
+
+<body class="">
+  <header class="bg-blue-500 py-4">
+    <div class="container mx-auto px-4">
+      <nav class="flex items-center justify-between">
+        <a href="#" class="text-white text-lg font-semibold">IPTV Sales</a>
+        <section class="justify-center flex">
+<div class="relative">
+    <input type="checkbox" id="sortbox" class="hidden absolute">
+    <label for="sortbox" class="flex items-center space-x-1 cursor-pointer">
+    <span class="text-lg"><svg class="h-6 w-6" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M4 7C4 6.44771 4.44772 6 5 6H24C24.5523 6 25 6.44771 25 7C25 7.55229 24.5523 8 24 8H5C4.44772 8 4 7.55229 4 7Z" fill="#ffffff"></path><path d="M4 13.9998C4 13.4475 4.44772 12.9997 5 12.9997L16 13C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15L5 14.9998C4.44772 14.9998 4 14.552 4 13.9998Z" fill="#ffffff"></path><path d="M5 19.9998C4.44772 19.9998 4 20.4475 4 20.9998C4 21.552 4.44772 21.9997 5 21.9997H22C22.5523 21.9997 23 21.552 23 20.9998C23 20.4475 22.5523 19.9998 22 19.9998H5Z" fill="#ffffff"></path></g></svg>
+</span>
+ 
+
+    </label>
+
+        <div id="sortboxmenu" class="absolute mt-1 right-1 top-full min-w-max shadow rounded opacity-0 bg-white border border-gray-400 transition delay-75 ease-in-out z-10">
+        <ul class="block text-right text-gray-900">
+            <li><a href="#home" class="block px-3 py-2 hover:bg-gray-200">Home</a></li>
+            <li><a href="#features" class="block px-3 py-2 hover:bg-gray-200">Features</a></li>
+            <li><a href="#pricing" class="block px-3 py-2 hover:bg-gray-200">Pricing</a></li>
+            <li><a href="#contact" class="block px-3 py-2 hover:bg-gray-200">Contact</a></li>
+        </ul>
+    </div>
+</div>
+</section>
+      </nav>
+      
+      
+    </div>
+  </header>
+
+  <main id="home" class="container mx-auto px-4 py-8">
+    <section class="text-center">
+      <h1 class="text-4xl text-white font-bold mb-4">Welcome to IPTV Sales</h1>
+      <p class="text-lg text-gray-100 mb-8">Get access to a wide range of IPTV channels and enjoy your favorite shows and movies.</p>
+      <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">Get Started</a>
+     <div class="slider autoplay m-4">
+          <div class="s"><img src="img1.jpg" alt="Image 1" class="slide"></div>
+          <div class="s"><img src="img2.jpg" alt="Image 2" class="slide"></div>
+          <div class="s"><img src="img3.jpg" alt="Image 3" class="slide"></div>
+        </div>
+         
+    </section>
+
+    <section class="mt-12" id="features">
+      <h2 class="text-2xl font-bold text-white mb-4">Features</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-xl p-6">
+          <h3 class="text-xl font-semibold mb-2">High-Quality Channels</h3>
+          <p class="text-gray-700">Enjoy high-definition channels with crystal-clear audio and video quality.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-xl p-6">
+          <h3 class="text-xl font-semibold mb-2">On-Demand Content</h3>
+          <p class="text-gray-700">Access a vast library of on-demand movies and TV shows.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-xl p-6">
+          <h3 class="text-xl font-semibold mb-2">Multi-Device Support</h3>
+          <p class="text-gray-700">Watch IPTV on your favorite devices, including smartphones, tablets, and smart TVs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-12" id="pricing">
+      <section class="flex flex-col justify-center antialiased text-gray-600  p-4">
+    <div class="">
+        <!-- Card -->
+        <div class="max-w-xs mx-auto">
+            <div class="relative flex flex-col h-full bg-blue-500 shadow-lg rounded-lg shadow-lg p-5">
+                <!-- Popular badge -->
+                <div class="absolute top-0 right-5">
+                    <div class="text-xs inline-flex font-semibold bg-green-100 text-green-600 rounded-full text-center px-3 py-1.5 shadow-sm transform -translate-y-1/2">Most Popular</div>
+                </div>
+                <!-- Card header -->
+                <header class="pb-4 mb-4 border-b border-indigo-200 border-opacity-30">
+                    <!-- Logo -->
+                    <div class="mb-2">
+                        <svg width="42" height="44" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs>
+                                <linearGradient x1="27.515%" y1="0%" x2="59.658%" y2="100%" id="b">
+                                    <stop stop-color="#5EEAD4" offset="0%" />
+                                    <stop stop-color="#2DD4BF" offset="100%" />
+                                </linearGradient>
+                                <linearGradient x1="67.338%" y1="82.466%" x2="4.807%" y2="15.884%" id="c">
+                                    <stop stop-color="#F0FDFA" stop-opacity=".12" offset="0%" />
+                                    <stop stop-color="#F0FDFA" offset="100%" />
+                                </linearGradient>
+                                <linearGradient x1="47.38%" y1="24.752%" x2="58.769%" y2="81.336%" id="e">
+                                    <stop stop-color="#0F766E" stop-opacity=".24" offset="0%" />
+                                    <stop stop-color="#0D9488" stop-opacity="0" offset="100%" />
+                                </linearGradient>
+                                <path id="a" d="M25.015 44 0 29.437 10.654 0l25.17 4.338L42 26.648z" />
+                            </defs>
+                            <g fill="none" fill-rule="evenodd">
+                                <mask id="d" fill="#fff">
+                                    <use xlink:href="#a" />
+                                </mask>
+                                <use fill="url(#b)" xlink:href="#a" />
+                                <path d="m10.281-.584 23.651 20.647 14.84 11.177 7.884-14.748-.927-9.78-11.44-7.296-8.81-3.26L20.02-4.62 10.281-.584Z" fill="url(#c)" style="mix-blend-mode:overlay" mask="url(#d)" />
+                                <path d="M43.015 17.16-1.969 29.974l6.647 11.579c6.184 3.808 9.481 5.867 9.894 6.175.412.31 7.729.31 21.95 0l7.884-9.88-1.391-20.688Z" fill="url(#e)" style="mix-blend-mode:multiply" mask="url(#d)" />
+                                <path fill-opacity=".32" fill="#F0FDFA" style="mix-blend-mode:overlay" mask="url(#d)" d="m36.18 3.3-2.17 16.714L23.625 48.18l20.15-5.107 5.89-11.297 1.085-18.881z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <!-- Product name -->
+                    <h3 class="text-xl font-extrabold text-indigo-50 leading-snug mb-2">Small Business</h3>
+                    <!-- Price -->
+                    <div class="font-extrabold mb-1"><span class="text-2xl text-indigo-200">$</span><span class="text-4xl text-indigo-50">179</span></div>
+                    <!-- Description -->
+                    <div class="text-indigo-200">Billed Yearly. Perfect for small businesses</div>
+                </header>
+                <!-- Features list -->
+                <ul class="text-indigo-200 text-sm space-y-2 flex-grow mb-6">
+                    <li class="flex items-center">
+                        <svg class="w-3 h-3 fill-current text-green-500 mr-3 flex-shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                        </svg>
+                        <span>IPTV For life never ending with maintaining for long time.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-3 h-3 fill-current text-green-500 mr-3 flex-shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                        </svg>
+                        <span>IPTV For life never ending with maintaining for long time.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-3 h-3 fill-current text-green-500 mr-3 flex-shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                        </svg>
+                        <span>IPTV For life never ending with maintaining for long time.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-3 h-3 fill-current text-green-500 mr-3 flex-shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                        </svg>
+                        <span>IPTV For life never ending with maintaining for long time.</span>
+                    </li>
+                </ul>
+                <button class="font-semibold text-sm inline-flex items-center justify-center px-3 py-2 border border-transparent rounded leading-5 shadow transition duration-150 ease-in-out w-full bg-green-400 hover:bg-green-500 text-white focus:outline-none focus-visible:ring-2">Call To Action</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    </section>
+
+    <section class="mt-12" id="contact">
+      <h2 class="text-2xl text-white font-bold mb-4">Contact</h2>
+      <p class="text-lg text-white mb-8">Have any questions or need assistance? Contact our support team.</p>
+      <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">Contact Us</a>
+    </section>
+  </main>
+
+  <footer class="py-4">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-white">© 2023 Droiders. All rights reserved.</p>
+    </div>
+  </footer>
+ 
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
+  <script>
+  $('.autoplay').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000
+    });
+  </script>
+</body>
+
+</html>
